@@ -1,0 +1,175 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #e0ecde !important;
+}
+#section__ {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+main {
+  width: 80%;
+  height: 90vh;
+  margin: auto !important;
+  flex-direction: row;
+  display: flex !important;
+}
+
+.side {
+  flex: 1;
+  padding: 30px;
+  background-color: #194f6b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.side::before {    
+    content: "";
+    background-image: url('./img/bg.jpg');
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.15;
+}
+
+.logo {
+  margin-bottom: 10px;
+  color: #fff;
+  font-size: 2rem;
+  position: relative;
+}
+
+.logo > span {
+  color: #68b2a0;
+}
+.motto {
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+  color: #eee;
+  position: relative;
+}
+
+.desc {
+  color: #eee;
+  position: relative;
+}
+
+#version{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: #68b2a0;
+}
+
+.login__section {
+  background-color: #fff;
+  flex: 2;
+  padding: 15px
+}
+.not_registered{
+    display: flex;
+    align-items: center !important;
+    justify-content: flex-end;
+}
+
+.not_registered > p{
+    color: #161616;
+    font-size: .9rem;
+}
+
+.not_registered > a{
+    border: 1px solid #161616;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #161616;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: .85rem;
+}
+
+#form_login{
+    padding: 15px 40px;
+    margin-top: 50px;
+}
+
+#form_login > h4{
+    font-size: 2rem;
+    color: #194f6b;
+}
+
+#form_login > p{
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #aaa;
+    margin-top: 3px;
+}
+
+#form_login > button{
+    background-color: #194f6b;
+    color: white;
+    border: none; outline: none;
+    padding: 15px 30px;
+    cursor: pointer;
+}
+
+.input{
+    font-size: 1rem;
+    width: 330px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    background-color: #e0ecde;
+    display: block;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    padding: 10px;
+    color: #194f6b;
+}
+
+
+#form_login > label{
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+@media screen and (max-width:600px) {
+    #form_login{
+        padding: 15px;
+        margin-top: 50px;
+    }
+    main{
+        flex-direction: column !important;
+        width: 96%;
+        height: 98vh;
+    }
+    #version{
+        display: none;
+    }
+
+    .logo{
+        font-size: 1.3rem;
+    }
+
+    .motto{
+        font-size: .6rem;
+    }
+}
