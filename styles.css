@@ -126,7 +126,8 @@ main {
     background-color: #194f6b;
     color: white;
     border: none; outline: none;
-    padding: 15px 30px;
+    padding: 10px 30px;
+    margin-top: 10px;
     cursor: pointer;
 }
 
@@ -163,6 +164,10 @@ main {
     }
     #version{
         display: none;
+    }
+
+    input{
+
     }
 
     .logo{
