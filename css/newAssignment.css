@@ -1,0 +1,59 @@
+body{
+    background-color: #e0ecde !important;
+}
+.logo {
+    color: #161616;
+    font-size: 1.5rem;
+    position: relative;
+  }
+  
+  .logo > span {
+    color: #68b2a0;
+  }
+
+  .avatar_{
+      background-color: #e0ecde;
+      width: 30px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      padding: 0;
+
+  }
+
+  .avatar_ > img{
+      width: 20px;
+  }
+  .profile{
+      cursor: pointer;
+  }
+
+  .profile:hover{
+      color: #194f6b !important;
+  }
+
+.textarea{
+    resize: none;
+    width: 100%;
+    font-size: 1.2rem;
+    /* margin: 10px auto; */
+}
+#question_container{
+    width: 100%;
+}
+
+
+.essay_type{
+    width: 100%;
+}
+
+.minus{
+    width: 50px;
+    height: 50px;
+    background-color: orangered;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+}
